@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav" >
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#Our works">our works</a></li>
+                    <li><a href="#contact us">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div >
+        <header id="home">
+            <h2>lake camp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </header>		
+    </div>
+<div>
+    <main id="Our works">
+        <h2>Our works</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis sequi minus at alias provident architecto enim tenetur! Omnis eaque itaque ut nulla necessitatibus, blanditiis, quo, dolorem animi est quam ducimus?</p>
+    </main>
+</div>
+<div>
+    <footer id="contact us">
+        <h2>contact us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit labore numquam commodi eum ea porro blanditiis error vel officia ipsum. Pariatur, voluptatem reprehenderit? Reprehenderit, odio aut! Neque exercitationem culpa a?</p>
+        <form id="form">
+            <label>First Name:</label>
+            <input type="text" name="firstName" />
+            <br />
+            <label>Last Name:</label>
+            <input type="text" name="lastName" id="lastName" />
+            <br />
+            <!-- This button will submit the form, causing the page to redirect -->
+            <button type="submit">Submit Name</button>
+          </form>
+    </footer>
+</div>
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>

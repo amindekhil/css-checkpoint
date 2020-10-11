@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contactus">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <h1>Lake Camp</h1>
+    <main>
+       <div id="about"> 
+           <h1  class="soustitre">About</h1>
+        <p class="lorem">orem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laboriosam quas, culpa rem provident repellat  sint suscipit placeat error autem magnam nam soluta ipsa eveniet laudantium expedita voluptatibus repudiandae facere!
+        </p>
+       </div>
+<div id="services"><h1  class="soustitre">services</h1>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laboriosam quas, culpa rem provident repellat  sint suscipit placeat error autem magnam nam soluta ipsa eveniet laudantium expedita voluptatibus repudiandae facere!
+    </p>
+</div>
+    </main>
+    <footer  id="contactus">
+        <h1 class="soustitre">contact us</h1>
+        <form id="form">
+            <label>First Name:</label>
+            <input type="text" name="firstName" />
+            <br />
+            <label>Last Name:</label>
+            <input type="text" name="lastName" id="lastName" />
+            <br />
+            <!-- This button will submit the form, causing the page to redirect -->
+            <button type="submit">Submit Name</button>
+          </form>
+    </footer>
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>
